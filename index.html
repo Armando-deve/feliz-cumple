@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>🎉 Feliz Cumpleaños 🎉</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive;
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      max-width: 500px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      animation: bounceIn 1.2s ease;
+    }
+
+    h1 {
+      color: #ff4081;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #333;
+    }
+
+    .balloons {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: floatUp 5s infinite ease-in;
+    }
+
+    @keyframes floatUp {
+      0% { top: 100%; opacity: 0; }
+      50% { opacity: 1; }
+      100% { top: -100px; opacity: 0; }
+    }
+
+    @keyframes bounceIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>¡Feliz Cumpleaños!</h1>
+    <p>Te deseo un día lleno de alegría, amor y muchas sorpresas lindas. 🥳🎂</p>
+    <p>¡Que todos tus sueños se hagan realidad!</p>
+  </div>
+
+  <img class="balloons" src="https://cdn.pixabay.com/photo/2016/03/31/20/22/balloons-1294504_1280.png" width="100" />
+</body>
+</html>
